@@ -1,29 +1,23 @@
-import { routing } from '@/libs/i18nNavigation';
-import { enUS, frFR } from '@clerk/localizations';
+import { enUS, zhCN } from '@clerk/localizations';
 import { ClerkProvider } from '@clerk/nextjs';
-import { setRequestLocale } from 'next-intl/server';
 
-export default async function AuthLayout(props: {
+export default function AuthLayout(props: {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
+  params: { locale: string };
 }) {
-  const { locale } = await props.params;
-  setRequestLocale(locale);
-  let clerkLocale = enUS;
+  let clerkLocale = zhCN;
   let signInUrl = '/sign-in';
   let signUpUrl = '/sign-up';
   let dashboardUrl = '/dashboard';
-  let afterSignOutUrl = '/';
 
-  if (locale === 'fr') {
-    clerkLocale = frFR;
+  if (props.params.locale === 'en') {
+    clerkLocale = enUS;
   }
 
-  if (locale !== routing.defaultLocale) {
-    signInUrl = `/${locale}${signInUrl}`;
-    signUpUrl = `/${locale}${signUpUrl}`;
-    dashboardUrl = `/${locale}${dashboardUrl}`;
-    afterSignOutUrl = `/${locale}${afterSignOutUrl}`;
+  if (props.params.locale !== 'zh') {
+    signInUrl = `/${props.params.locale}${signInUrl}`;
+    signUpUrl = `/${props.params.locale}${signUpUrl}`;
+    dashboardUrl = `/${props.params.locale}${dashboardUrl}`;
   }
 
   return (
@@ -33,7 +27,6 @@ export default async function AuthLayout(props: {
       signUpUrl={signUpUrl}
       signInFallbackRedirectUrl={dashboardUrl}
       signUpFallbackRedirectUrl={dashboardUrl}
-      afterSignOutUrl={afterSignOutUrl}
     >
       {props.children}
     </ClerkProvider>

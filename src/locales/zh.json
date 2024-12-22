@@ -1,0 +1,75 @@
+{
+  "RootLayout": {
+    "home_link": "首页",
+    "about_link": "关于",
+    "counter_link": "计数器",
+    "portfolio_link": "作品集",
+    "sign_in_link": "登录",
+    "sign_up_link": "注册"
+  },
+  "BaseTemplate": {
+    "description": "带有 Tailwind CSS 的 Nextjs 模板的起始代码",
+    "made_with": "由 <author></author> 制作。"
+  },
+  "Index": {
+    "meta_title": "Next.js 模板演示",
+    "meta_description": "Next js 模板是您项目的完美起始代码。使用 Next.js 框架构建您的 React 应用程序。",
+    "sponsors_title": "赞助商"
+  },
+  "Counter": {
+    "meta_title": "计数器",
+    "meta_description": "数据库操作示例",
+    "loading_counter": "正在加载计数器...",
+    "security_powered_by": "安全性、机器人检测和速率限制由提供"
+  },
+  "CounterForm": {
+    "presentation": "计数器存储在数据库中，并由您提供的值递增。",
+    "label_increment": "递增",
+    "button_increment": "递增"
+  },
+  "CurrentCount": {
+    "count": "计数: {count}"
+  },
+  "About": {
+    "meta_title": "关于",
+    "meta_description": "关于页面描述",
+    "about_paragraph": "欢迎来到我们的关于页面！我们是一支热衷于创建惊人软件的团队。",
+    "translation_powered_by": "由提供的翻译"
+  },
+  "Portfolio": {
+    "meta_title": "作品集",
+    "meta_description": "欢迎来到我的作品集页面！",
+    "presentation": "欢迎来到我的作品集页面！在这里您将找到我工作和成就的精心策划的合集。通过这个作品集，我以展示我的专业技能、创造力和我能为您的项目带来的价值。",
+    "portfolio_name": "作品集 {name}",
+    "error_reporting_powered_by": "错误报告由提供",
+    "coverage_powered_by": "代码覆盖率由提供"
+  },
+  "PortfolioSlug": {
+    "meta_title": "作品集 {slug}",
+    "meta_description": "作品集 {slug} 描述",
+    "header": "作品集 {slug}",
+    "content": "为企业活动创建了一套宣传材料和品牌元素。设计了一个视觉统一的主题，包括一个徽标、海报、横幅和数字资产。整合了客户的品牌形象，同时注入了现代和创新的方法。得到了活动参与者的积极反馈，导致活动成功，参与者的参与度提高，品牌知名度增加。",
+    "log_management_powered_by": "日志管理由提供"
+  },
+  "SignIn": {
+    "meta_title": "登录",
+    "meta_description": "通过我们用户友好的登录过程轻松登录您的账户。"
+  },
+  "SignUp": {
+    "meta_title": "注册",
+    "meta_description": "通过我们直观的注册过程轻松创建账户。"
+  },
+  "Dashboard": {
+    "meta_title": "仪表板",
+    "hello_message": "你好 {email}！",
+    "alternative_message": "想要使用相同的技术栈更快地构建您的 SaaS 吗？试试 <url></url>。"
+  },
+  "UserProfile": {
+    "meta_title": "用户个人资料"
+  },
+  "DashboardLayout": {
+    "dashboard_link": "仪表板",
+    "user_profile_link": "管理您的账户",
+    "sign_out": "退出"
+  }
+}
